@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+">
+
+    
+    <bean id="musico" class="com.mycompany.spring.model.Musico"/> 
+    
+    <bean id="bob" class="com.mycompany.spring.model.Musico”>
+    <constructor-arg value="5"/>
+    </bean>
+    
+    
+    <bean id="instrumento" class="com.mycompany.spring.model.Musico"/> 
+    
+    <bean id="felix" class="com.mycompany.spring.model.Musico”>
+    <constructor-arg value="5"/>
+    </bean>
+    
+    <!--cinco -->
+    <bean id="chuck" class="com.mycompany.spring.model.Musico”>
+    <property name="canciones" value="5" />
+    </bean>
+    
+    <!--seis -->
+    <bean id="kurt" class="com.mycompany.spring.model.Musico”>
+    <property name="isntrumento" value="5" >
+        
+    <property>
+    </bean>
+</beans>
