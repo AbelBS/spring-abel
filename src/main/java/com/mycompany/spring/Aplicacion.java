@@ -8,7 +8,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class Aplicacion {
     public static void main(String[] args) {
-        ApplicationContext cntx = new ClassPathXmlApplicationContext("app.xml");
+        ApplicationContext cntx = new ClassPathXmlApplicationContext("app.xml"); //busca los archivos de configuración dentro del classpath,
         Aplicacion.ejemplo2(cntx);
     }
     
@@ -16,6 +16,7 @@ public class Aplicacion {
     private static void ejemplo1( ApplicationContext cntx) {
           Musico musico = (Musico) cntx.getBean("musico");
           musico.who();
+         
     } 
    
     

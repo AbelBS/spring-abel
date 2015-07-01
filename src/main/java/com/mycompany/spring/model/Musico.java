@@ -29,7 +29,7 @@ public class Musico {
     }
     
     public void who(){
-        System.out.println("Soy un musico :D");
+        System.out.println("SOY UN MUSICO :D");
     }
     public String getNombre() {
         return nombre;

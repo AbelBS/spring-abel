@@ -8,26 +8,10 @@
     
     <bean id="musico" class="com.mycompany.spring.model.Musico"/> 
     
-    <bean id="bob" class="com.mycompany.spring.model.Musico”>
+    <bean id="bob" class="com.mycompany.spring.model.Musico">
     <constructor-arg value="5"/>
     </bean>
     
     
-    <bean id="instrumento" class="com.mycompany.spring.model.Musico"/> 
     
-    <bean id="felix" class="com.mycompany.spring.model.Musico”>
-    <constructor-arg value="5"/>
-    </bean>
-    
-    <!--cinco -->
-    <bean id="chuck" class="com.mycompany.spring.model.Musico”>
-    <property name="canciones" value="5" />
-    </bean>
-    
-    <!--seis -->
-    <bean id="kurt" class="com.mycompany.spring.model.Musico”>
-    <property name="isntrumento" value="5" >
-        
-    <property>
-    </bean>
 </beans>
