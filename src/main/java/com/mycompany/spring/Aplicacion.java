@@ -14,14 +14,14 @@ public class Aplicacion {
     
      
     private static void ejemplo1( ApplicationContext cntx) {
-          Musico musico = (Musico) cntx.getBean("musico000***00000");
+          Musico musico = (Musico) cntx.getBean("musico");
           musico.who();
          
     } 
    
     
     private static void ejemplo2( ApplicationContext cntx) {
-          Musico musico = (Musico) cntx.getBean("bob00****00000");
+          Musico musico = (Musico) cntx.getBean("bob");
           musico.who();
           System.out.println(musico.getCanciones());
     }
