@@ -5,13 +5,51 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
 ">
 
-    
+     <!-- DOS -->
     <bean id="musico" class="com.mycompany.spring.model.Musico"/> 
     
+    <!-- TRES -->
     <bean id="bob" class="com.mycompany.spring.model.Musico">
     <constructor-arg value="5"/>
     </bean>
     
+    <!-- CUATRO -->
+    <bean id="instrumento" class="com.mycompany.spring.model.Instrumento"/>
     
+    <bean id="felix" class="com.mycompany.spring.model.Musico"> 
+        <constructor-arg value="12"/>
+        <constructor-arg ref="instrumento"/>
+    </bean>
+    
+    <!-- CINCO -->
+    <bean id="chuck" class="com.mycompany.spring.model.Musico">
+        <property name="canciones" value="5"/>
+    </bean>   
+     
+    <!-- SEIS -->    
+    <bean id="donald" class="com.mycompany.spring.model.Musico">
+        <property name="instrumento" ref="instrumento" />
+        <property name="canciones" value="19"/>
+        <property name="nombre" value="Donalddd"/>
+    </bean>     
+        
+    <!-- SIETE -->    
+    <bean id="kurt" class="com.mycompany.spring.model.Musico"> 
+        <property name="instrumento">
+            <bean id="guitarraKurt" class="com.mycompany.spring.model.Guitarra" />
+        </property>
+    </bean>   
+    <!-- OCHO -->
+    <bean id="guitarra" class="com.mycompany.spring.model.Guitarra"/>
+    <bean id="piano" class="com.mycompany.spring.model.Piano"/>
+    
+    <bean id="charly" class="com.mycompany.spring.model.Musico"> 
+        <property name="instrumentos">
+            <list>
+                <ref bean= "piano"/>
+                <ref bean= "guitarra"/>
+            </list>
+        </property>
+    </bean>
     
 </beans>

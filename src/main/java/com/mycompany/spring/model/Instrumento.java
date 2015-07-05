@@ -11,7 +11,7 @@ public class Instrumento {
     
     
     public void sonido(){
-    
+        System.out.println("el sonido del instrumento es: ");
     }
 
     public String getNombre() {
